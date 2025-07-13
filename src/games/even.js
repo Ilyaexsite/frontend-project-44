@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync'
-const isEven = (number) => number % 2 === 0
+const isEven = number => number % 2 === 0
 export const playEvenGame = (userName) => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".')
   const roundsCount = 3

@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync'
 const getUserName = () => {
   const userName = readlineSync.question('May I have your name? ')
-  return userName;
+  return userName
 }
 const greetUser = (name) => {
   console.log(`Hello, ${name}!`)
@@ -18,7 +18,8 @@ const runGame = (description, generateRound) => {
     const userAnswer = readlineSync.question('Your answer: ')
     if (userAnswer === correctAnswer) {
       console.log('Correct!')
-    } else {
+    }
+    else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`)
       console.log(`Let's try again, ${userName}!`)
       return
