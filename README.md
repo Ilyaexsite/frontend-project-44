@@ -4,3 +4,4 @@
 terminalizer play(https://github.com/Ilyaexsite/frontend-project-44/blob/main/hexlet.yml)
 terminalizer play(https://github.com/Ilyaexsite/frontend-project-44/blob/main/calc.yml) 
 terminalizer play(https://github.com/Ilyaexsite/frontend-project-44/blob/main/nod.yml)
+terminalizer play (https://github.com/Ilyaexsite/frontend-project-44/blob/main/progression.yml)
