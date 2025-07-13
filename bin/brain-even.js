@@ -1,12 +1,10 @@
 #!/usr/bin/env node
 
-import { greetUser, getUserName } from '../src/cli.js';
-import { getRandomInt, isEven } from '../src/gameUtils.js';
+import { getUserName, greetUser } from '../src/cli.js';
+import { playGame } from '../src/games/even.js';
 
-greetUser();
+console.log('Welcome to the Brain Games!');
 const userName = getUserName();
-console.log(`Hello, ${userName}!`);
-console.log('Answer "yes" if the number is even, otherwise answer "no".');
+greetUser(userName);
 
-const number = getRandomInt(1, 100);
-console.log(`Question: ${number}`); 
+playGame(userName);
