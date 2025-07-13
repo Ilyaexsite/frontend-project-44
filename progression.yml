@@ -1,0 +1,233 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: G:\frontend-project-44\bin
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 124
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 12
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 612
+    content: "\e[2J\e[m\e[HWindows PowerShell\r\n(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.\r\n\r\nПопробуйте новую кроссплатформенную оболочку PowerShell (https://aka.ms/pscore6)\e]0;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 18
+    content: "\e[25l\e[6;1H\e[?25h"
+  - delay: 19
+    content: "\e]0;Администратор: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a"
+  - delay: 803
+    content: 'PS G:\frontend-project-44\bin> '
+  - delay: 278
+    content: "\e[?25l"
+  - delay: 20
+    content: "\e[93mterminalizer\e[m record progression\e[?25h"
+  - delay: 828
+    content: "\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[6;32Hbrain-progression\e[m\e[14X\e[?25h"
+  - delay: 796
+    content: "\r\n"
+  - delay: 145
+    content: "Welcome to the Brain Games!\r\n"
+  - delay: 9
+    content: 'May I have your name? '
+  - delay: 1460
+    content: I
+  - delay: 214
+    content: l
+  - delay: 310
+    content: 'y'
+  - delay: 138
+    content: a
+  - delay: 344
+    content: "\r\n"
+  - delay: 11
+    content: "Hello, Ilya!\e[30X\r\nWhat number is missing in the progression?\r\nQuestion: 29 36 43 50 .. 64 71 78 85      \r\nYour answer: \e[29X"
+  - delay: 8793
+    content: '5'
+  - delay: 196
+    content: '7'
+  - delay: 244
+    content: "\r\nCorrect!\r\nQuestion: 39 41 43 45 .. 49 51 53 55 57\r"
+  - delay: 14
+    content: "\nYour answer:\e[1C"
+  - delay: 4665
+    content: '4'
+  - delay: 252
+    content: '7'
+  - delay: 262
+    content: "\r\nCorrect!\r\nQuestion: 27 32 .. 42 47 52 57 62\r"
+  - delay: 15
+    content: "\nYour answer:\e[1C"
+  - delay: 12651
+    content: '3'
+  - delay: 296
+    content: '7'
+  - delay: 530
+    content: "\r\nCorrect!\r\nCongratulations, Ilya!\r"
+  - delay: 15
+    content: "\nPS G:\\frontend-project-44\\bin>\e[1C"
+  - delay: 3291
+    content: "\e[?25l"
+  - delay: 15
+    content: "\e[93mbrain-progression\e[?25h"
+  - delay: 467
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[12;32Hterminalizer\e[m record progression\e[?25h"
+  - delay: 781
+    content: "\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[12;32Hbrain-progression\e[m\e[14X\e[?25h"
+  - delay: 597
+    content: "\e[25l\e[HQuestion: 29 36 43 50 .. 64 71 78 85\e[K\r\nYour answer: 57\e[K\r\nCorrect!\e[K\r\nQuestion: 39 41 43 45 .. 49 51 53 55 57\e[K\r\nYour answer: 47\e[K\r\nCorrect!\e[K\r\nQuestion: 27 32 .. 42 47 52 57 62\e[K\r\nYour answer: 37\e[K\r\nCorrect!\e[K\r\nCongratulations, Ilya!\e[K\r\nPS G:\\frontend-project-44\\bin> \e[93mbrain-progression\e[m\e[14X\e[14C\e[K\r\n\e[K\e[48C\e[?25h"
+  - delay: 10
+    content: "\r"
+  - delay: 47
+    content: "Welcome to the Brain Games!\r\n"
+  - delay: 16
+    content: 'May I have your name? '
+  - delay: 3001
+    content: i
+  - delay: 200
+    content: l
+  - delay: 130
+    content: 'y'
+  - delay: 100
+    content: a
+  - delay: 164
+    content: "\r\nHello, ilya!\r\nWhat number is missing in the progression?\r\nQuestion: 37 47 57 67 77 87 97 ..\r"
+  - delay: 12
+    content: "\nYour answer:\e[1C"
+  - delay: 1532
+    content: '1'
+  - delay: 135
+    content: '0'
+  - delay: 147
+    content: '0'
+  - delay: 311
+    content: "\r\n'100' is wrong answer ;(. Correct answer was '107'.\r\nLet's try again, ilya!\r"
+  - delay: 18
+    content: "\nPS G:\\frontend-project-44\\bin>\e[1C"
+  - delay: 2177
+    content: "\e[?25l"
+  - delay: 11
+    content: "\e[93me\e[?25h"
+  - delay: 126
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[93m\bex\e[?25h"
+  - delay: 163
+    content: "\e[m\e[?25l"
+  - delay: 8
+    content: "\e[93m\e[12;32Hexi\e[?25h"
+  - delay: 158
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[92m\e[12;32Hexit\e[?25h"
+  - delay: 348
+    content: "\e[25l\e[m\e[HCongratulations, Ilya!\e[K\r\nPS G:\\frontend-project-44\\bin> \e[93mbrain-progression\e[m\e[14X\e[14C\e[K\r\nWelcome to the Brain Games!\e[K\r\nMay I have your name? ilya\e[K\r\nHello, ilya!\e[K\r\nWhat number is missing in the progression?\e[K\r\nQuestion: 37 47 57 67 77 87 97 ..\e[K\r\nYour answer: 100\e[K\r\n'100' is wrong answer ;(. Correct answer was '107'.\e[K\r\nLet's try again, ilya!\e[K\r\nPS G:\\frontend-project-44\\bin> \e[92mexit\e[m\e[K\r\n\e[K\e[35C\e[?25h"
+  - delay: 8
+    content: "\r"
