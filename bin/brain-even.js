@@ -1,10 +1,16 @@
 #!/usr/bin/env node
 
-import { getUserName, greetUser } from '../src/cli.js';
-import { playEvenGame } from '../src/games/even.js';
+import { runGame } from '../src/cli.js';
 
-console.log('Welcome to the Brain Games!');
-const userName = getUserName();
-greetUser(userName);
+const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-playEvenGame(userName);
+const isEven = (number) => number % 2 === 0;
+
+const generateRound = () => {
+  const number = Math.floor(Math.random() * 100); 
+  const question = number; 
+  const correctAnswer = isEven(number) ? 'yes' : 'no';
+  return [question, correctAnswer];
+};
+
+runGame(description, generateRound);
