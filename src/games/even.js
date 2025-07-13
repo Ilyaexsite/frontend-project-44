@@ -8,7 +8,7 @@ export const playEvenGame = (userName) => {
   const roundsCount = 3;
   
   for (let i = 0; i < roundsCount; i += 1) {
-    const randomNumber = Math.floor(Math.random() * 100) + 1;
+    const randomNumber = Math.floor(Math.random() * 100);
     console.log(`Question: ${randomNumber}`);
     const userAnswer = readlineSync.question('Your answer: ').toLowerCase();
     
