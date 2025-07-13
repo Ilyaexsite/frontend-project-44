@@ -1,7 +1,6 @@
+import readlineSync from 'readline-sync';
 
 export const getRandomInt = (min, max) => {
-  const minInt = Math.ceil(min);
-  const maxInt = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 export const greetUser = () => {
