@@ -1,31 +1,34 @@
-import { runGame } from '../cli.js';
-import { getRandomInt } from '../utils.js';
+import { runGame } from '../cli.js'; 
 
-const rules = 'What is the result of the expression?';
-
-const calculate = (a, b, operator) => {
-  switch (operator) {
-    case '+':
-      return a + b;
-    case '-':
-      return a - b;
-    case '*':
-      return a * b;
-    default:
-      throw new Error(`Unknown operator: ${operator}`);
-  }
-};
+const description = 'What is the result of the expression?';
 
 const generateRound = () => {
-  const a = getRandomInt(1, 20);
-  const b = getRandomInt(1, 20);
-  const operators = ['+', '-', '*'];
-  const operator = operators[getRandomInt(0, operators.length - 1)];
-  
-  const question = `${a} ${operator} ${b}`;
-  const answer = String(calculate(a, b, operator));
-  
-  return [question, answer];
+  const number1 = Math.floor(Math.random() * 10);
+  const number2 = Math.floor(Math.random() * 10);
+  const operations = ['+', '-', '*'];
+  const operation = operations[Math.floor(Math.random() * operations.length)];
+
+  let correctAnswer;
+  switch (operation) {
+    case '+':
+      correctAnswer = String(number1 + number2);
+      break;
+    case '-':
+      correctAnswer = String(number1 - number2);
+      break;
+    case '*':
+      correctAnswer = String(number1 * number2);
+      break;
+    default:
+      throw new Error(`Unknown operation: ${operation}`);
+  }
+
+  const question = `${number1} ${operation} ${number2}`; 
+  return [question, correctAnswer];
 };
 
-export default () => runGame(rules, generateRound);
+const startGame = () => {
+  runGame(description, generateRound);
+};
+
+export default startGame;

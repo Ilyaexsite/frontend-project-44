@@ -10,6 +10,3 @@ export const greetUser = () => {
   console.log(`Hello, ${userName}!`);
   return userName;
 };
-export function isEven(num) {
-    return num % 2 === 0;
-  }
