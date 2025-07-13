@@ -1,0 +1,411 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: G:\frontend-project-44
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 124
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 12
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 604
+    content: "\e[2J\e[m\e[HWindows PowerShell\r\n(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.\r\n\r\nПопробуйте новую кроссплатформенную оболочку PowerShell (https://aka.ms/pscore6)\e]0;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 20
+    content: "\e[25l\e[6;1H\e[?25h"
+  - delay: 15
+    content: "\e]0;Администратор: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a"
+  - delay: 797
+    content: 'PS G:\frontend-project-44> '
+  - delay: 1081
+    content: "\e[?25l"
+  - delay: 23
+    content: "\e[93mb\e[?25h"
+  - delay: 248
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\bbr\e[?25h"
+  - delay: 114
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[6;28Hbra\e[?25h"
+  - delay: 138
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[6;28Hbrai\e[?25h"
+  - delay: 198
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[6;28Hbrain\e[?25h"
+  - delay: 691
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[6;28Hbrain-\e[?25h"
+  - delay: 533
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[6;28Hbrain-p\e[?25h"
+  - delay: 107
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[6;28Hbrain-pr\e[?25h"
+  - delay: 165
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[93m\e[6;28Hbrain-pri\e[?25h"
+  - delay: 194
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[6;28Hbrain-prim\e[?25h"
+  - delay: 114
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[6;28Hbrain-prime\e[?25h"
+  - delay: 396
+    content: "\e[m\r\n"
+  - delay: 151
+    content: "Welcome to the Brain Games!\r\n"
+  - delay: 12
+    content: 'May I have your name? '
+  - delay: 849
+    content: i
+  - delay: 238
+    content: l
+  - delay: 147
+    content: 'y'
+  - delay: 118
+    content: a
+  - delay: 178
+    content: "\r\n"
+  - delay: 11
+    content: "Hello, ilya!\e[49X\r\nAnswer \"yes\" if given number is prime. Otherwise answer \"no\".\r\nQuestion: 44\e[49X\r\nYour answer: \e[48X"
+  - delay: 2166
+    content: 'n'
+  - delay: 83
+    content: o
+  - delay: 380
+    content: "\r\nCorrect!\r\nQuestion: 89\r"
+  - delay: 8
+    content: "\nYour answer:\e[1C"
+  - delay: 1354
+    content: 'n'
+  - delay: 134
+    content: o
+  - delay: 295
+    content: "\r\n'no' is wrong answer ;(. Correct answer was 'yes'.\r\nLet's try again, ilya!\r"
+  - delay: 15
+    content: "\nPS G:\\frontend-project-44>\e[1C"
+  - delay: 2579
+    content: "\e[?25l"
+  - delay: 13
+    content: "\e[93mbrain-prime\e[?25h"
+  - delay: 645
+    content: "\e[25l\e[m\e[HMay I have your name? ilya\e[K\r\nHello, ilya!\e[K\r\nAnswer \"yes\" if given number is prime. Otherwise answer \"no\".\e[K\r\nQuestion: 44\e[K\r\nYour answer: no\e[K\r\nCorrect!\e[K\r\nQuestion: 89\e[K\r\nYour answer: no\e[K\r\n'no' is wrong answer ;(. Correct answer was 'yes'.\e[K\r\nLet's try again, ilya!\e[K\r\nPS G:\\frontend-project-44> \e[93mbrain-prime\e[m\e[K\r\n\e[K\e[38C\e[?25h"
+  - delay: 11
+    content: "\r"
+  - delay: 44
+    content: "Welcome to the Brain Games!\r\n"
+  - delay: 12
+    content: 'May I have your name? '
+  - delay: 849
+    content: i
+  - delay: 201
+    content: l
+  - delay: 276
+    content: 'y'
+  - delay: 124
+    content: a
+  - delay: 258
+    content: "\r\nHello, ilya!\r\nAnswer \"yes\" if given number is prime. Otherwise answer \"no\".\r\nQuestion: 24\r"
+  - delay: 19
+    content: "\nYour answer:\e[1C"
+  - delay: 1856
+    content: 'y'
+  - delay: 317
+    content: e
+  - delay: 137
+    content: s
+  - delay: 311
+    content: "\r\n'yes' is wrong answer ;(. Correct answer was 'no'.\r\nLet's try again, ilya!\r"
+  - delay: 10
+    content: "\nPS G:\\frontend-project-44>\e[1C"
+  - delay: 1770
+    content: "\e[?25l"
+  - delay: 14
+    content: "\e[93mbrain-prime\e[?25h"
+  - delay: 318
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[12;28Hterminalizer\e[m record prime\e[?25h"
+  - delay: 323
+    content: "\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[12;28Hbrain-prime\e[m\e[14X\e[?25h"
+  - delay: 209
+    content: "\e[25l\e[HLet's try again, ilya!\e[K\r\nPS G:\\frontend-project-44> \e[93mbrain-prime\e[m\e[K\r\nWelcome to the Brain Games!\e[K\r\nMay I have your name? ilya\e[K\r\nHello, ilya!\e[K\r\nAnswer \"yes\" if given number is prime. Otherwise answer \"no\".\e[K\r\nQuestion: 24\e[K\r\nYour answer: yes\e[K\r\n'yes' is wrong answer ;(. Correct answer was 'no'.\e[K\r\nLet's try again, ilya!\e[K\r\nPS G:\\frontend-project-44> \e[93mbrain-prime\e[m\e[14X\e[14C\e[K\r\n\e[K\e[38C\e[?25h"
+  - delay: 10
+    content: "\r"
+  - delay: 44
+    content: "Welcome to the Brain Games!\r\n"
+  - delay: 18
+    content: 'May I have your name? '
+  - delay: 1088
+    content: i
+  - delay: 167
+    content: l
+  - delay: 117
+    content: 'y'
+  - delay: 79
+    content: a
+  - delay: 168
+    content: "\r\nHello, ilya!\r\nAnswer \"yes\" if given number is prime. Otherwise answer \"no\".\r\nQuestion: 67\r"
+  - delay: 13
+    content: "\nYour answer:\e[1C"
+  - delay: 1168
+    content: 'n'
+  - delay: 114
+    content: o
+  - delay: 313
+    content: "\r\n'no' is wrong answer ;(. Correct answer was 'yes'.\r\nLet's try again, ilya!\r"
+  - delay: 18
+    content: "\nPS G:\\frontend-project-44>\e[1C"
+  - delay: 1878
+    content: "\e[?25l"
+  - delay: 20
+    content: "\e[93mbrain-prime\e[?25h"
+  - delay: 274
+    content: "\e[25l\e[m\e[HLet's try again, ilya!\e[K\r\nPS G:\\frontend-project-44> \e[93mbrain-prime\e[m\e[14X\e[14C\e[K\r\nWelcome to the Brain Games!\e[K\r\nMay I have your name? ilya\e[K\r\nHello, ilya!\e[K\r\nAnswer \"yes\" if given number is prime. Otherwise answer \"no\".\e[K\r\nQuestion: 67\e[K\r\nYour answer: no\e[K\r\n'no' is wrong answer ;(. Correct answer was 'yes'.\e[K\r\nLet's try again, ilya!\e[K\r\nPS G:\\frontend-project-44> \e[93mbrain-prime\e[m\e[K\r\n\e[K\e[38C\e[?25h"
+  - delay: 19
+    content: "\r"
+  - delay: 38
+    content: "Welcome to the Brain Games!\r\n"
+  - delay: 13
+    content: 'May I have your name? '
+  - delay: 1673
+    content: i
+  - delay: 180
+    content: l
+  - delay: 116
+    content: 'y'
+  - delay: 86
+    content: a
+  - delay: 148
+    content: "\r\nHello, ilya!\r\nAnswer \"yes\" if given number is prime. Otherwise answer \"no\".\r\nQuestion: 68\r"
+  - delay: 15
+    content: "\nYour answer:\e[1C"
+  - delay: 1493
+    content: 'y'
+  - delay: 251
+    content: e
+  - delay: 136
+    content: s
+  - delay: 244
+    content: "\r\n'yes' is wrong answer ;(. Correct answer was 'no'.\r\nLet's try again, ilya!\r"
+  - delay: 17
+    content: "\nPS G:\\frontend-project-44>\e[1C"
+  - delay: 4348
+    content: "\e[?25l"
+  - delay: 20
+    content: "\e[93mbrain-prime\e[?25h"
+  - delay: 246
+    content: "\e[25l\e[m\e[HLet's try again, ilya!\e[K\r\nPS G:\\frontend-project-44> \e[93mbrain-prime\e[m\e[K\r\nWelcome to the Brain Games!\e[K\r\nMay I have your name? ilya\e[K\r\nHello, ilya!\e[K\r\nAnswer \"yes\" if given number is prime. Otherwise answer \"no\".\e[K\r\nQuestion: 68\e[K\r\nYour answer: yes\e[K\r\n'yes' is wrong answer ;(. Correct answer was 'no'.\e[K\r\nLet's try again, ilya!\e[K\r\nPS G:\\frontend-project-44> \e[93mbrain-prime\e[m\e[K\r\n\e[K\e[38C\e[?25h"
+  - delay: 13
+    content: "\r"
+  - delay: 40
+    content: "Welcome to the Brain Games!\r\n"
+  - delay: 12
+    content: 'May I have your name? '
+  - delay: 2642
+    content: i
+  - delay: 183
+    content: l
+  - delay: 148
+    content: 'y'
+  - delay: 116
+    content: a
+  - delay: 147
+    content: "\r\nHello, ilya!\r\nAnswer \"yes\" if given number is prime. Otherwise answer \"no\".\r\nQuestion: 22\r"
+  - delay: 20
+    content: "\nYour answer:\e[1C"
+  - delay: 4648
+    content: 'y'
+  - delay: 246
+    content: e
+  - delay: 115
+    content: s
+  - delay: 279
+    content: "\r\n'yes' is wrong answer ;(. Correct answer was 'no'.\r\nLet's try again, ilya!\r"
+  - delay: 16
+    content: "\nPS G:\\frontend-project-44>\e[1C"
+  - delay: 996
+    content: "\e[?25l"
+  - delay: 23
+    content: "\e[93mbrain-prime\e[?25h"
+  - delay: 327
+    content: "\e[25l\e[m\e[HLet's try again, ilya!\e[K\r\nPS G:\\frontend-project-44> \e[93mbrain-prime\e[m\e[K\r\nWelcome to the Brain Games!\e[K\r\nMay I have your name? ilya\e[K\r\nHello, ilya!\e[K\r\nAnswer \"yes\" if given number is prime. Otherwise answer \"no\".\e[K\r\nQuestion: 22\e[K\r\nYour answer: yes\e[K\r\n'yes' is wrong answer ;(. Correct answer was 'no'.\e[K\r\nLet's try again, ilya!\e[K\r\nPS G:\\frontend-project-44> \e[93mbrain-prime\e[m\e[K\r\n\e[K\e[38C\e[?25h"
+  - delay: 14
+    content: "\r"
+  - delay: 44
+    content: "Welcome to the Brain Games!\r\n"
+  - delay: 18
+    content: 'May I have your name? '
+  - delay: 1289
+    content: i
+  - delay: 215
+    content: l
+  - delay: 61
+    content: 'y'
+  - delay: 119
+    content: a
+  - delay: 132
+    content: "\r\nHello, ilya!\r\nAnswer \"yes\" if given number is prime. Otherwise answer \"no\".\r\nQuestion: 74\r"
+  - delay: 16
+    content: "\nYour answer:\e[1C"
+  - delay: 2126
+    content: 'n'
+  - delay: 63
+    content: o
+  - delay: 267
+    content: "\r\nCorrect!\r\nQuestion: 25\r"
+  - delay: 19
+    content: "\nYour answer:\e[1C"
+  - delay: 1709
+    content: 'n'
+  - delay: 81
+    content: o
+  - delay: 298
+    content: "\r\nCorrect!\r\nQuestion: 56\r"
+  - delay: 17
+    content: "\nYour answer:\e[1C"
+  - delay: 2147
+    content: 'y'
+  - delay: 277
+    content: e
+  - delay: 135
+    content: s
+  - delay: 394
+    content: "\r\n'yes' is wrong answer ;(. Correct answer was 'no'.\r\nLet's try again, ilya!\r"
+  - delay: 13
+    content: "\nPS G:\\frontend-project-44>\e[1C"
+  - delay: 2513
+    content: "\e[?25l"
+  - delay: 11
+    content: "\e[93me\e[?25h"
+  - delay: 189
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\bex\e[?25h"
+  - delay: 118
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[12;28Hexi\e[?25h"
+  - delay: 144
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[92m\e[12;28Hexit\e[?25h"
+  - delay: 199
+    content: "\e[25l\e[m\e[HQuestion: 74\e[K\r\nYour answer: no\e[K\r\nCorrect!\e[K\r\nQuestion: 25\e[K\r\nYour answer: no\e[K\r\nCorrect!\e[K\r\nQuestion: 56\e[K\r\nYour answer: yes\e[K\r\n'yes' is wrong answer ;(. Correct answer was 'no'.\e[K\r\nLet's try again, ilya!\e[K\r\nPS G:\\frontend-project-44> \e[92mexit\e[m\e[K\r\n\e[K\e[31C\e[?25h"
+  - delay: 19
+    content: "\r"
