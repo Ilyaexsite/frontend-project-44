@@ -9,7 +9,7 @@ const greetUser = (name) => {
 const runGame = (description, generateRound) => {
   console.log('Welcome to the Brain Games!')
   console.log(description)
-  const userName = getUserName() 
+  const userName = getUserName()
   greetUser(userName)
   const roundsCount = 3
   for (let i = 0; i < roundsCount; i += 1) {

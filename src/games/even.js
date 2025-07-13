@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync'
 const isEven = (number) => number % 2 === 0
 export const playEvenGame = (userName) => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".')
-  const roundsCount = 3;
+  const roundsCount = 3
   for (let i = 0; i < roundsCount; i += 1) {
     const randomNumber = Math.floor(Math.random() * 100) + 1
     console.log(`Question: ${randomNumber}`)

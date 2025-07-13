@@ -1,4 +1,4 @@
-import { runGame } from '../cli.js' 
+import { runGame } from '../cli.js'
 const description = 'What is the result of the expression?'
 const generateRound = () => {
   const number1 = Math.floor(Math.random() * 10)
@@ -20,8 +20,8 @@ const generateRound = () => {
       throw new Error(`Unknown operation: ${operation}`)
   }
   const question = `${number1} ${operation} ${number2}`
-  return [question, correctAnswer];
-};
+  return [question, correctAnswer]
+}
 const startGame = () => {
   runGame(description, generateRound)
 }
