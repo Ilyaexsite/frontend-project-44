@@ -1,3 +1,3 @@
 #!/usr/bin/env node
-import userName from '../src/games/games.js'
-userName()
+import greetUser from '../src/games/games.js'
+greetUser()
