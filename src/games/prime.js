@@ -34,12 +34,12 @@ const playPrimeGame = () => {
   console.log(`Congratulations, ${userName}!`)
 }
 export const getRandomInt = (min, max) => {
-    return Math.floor(Math.random() * (max - min + 1)) + min
-  }
-  export const greetUser = () => {
-    console.log('Welcome to the Brain Games!')
-    const userName = readlineSync.question('May I have your name? ')
-    console.log(`Hello, ${userName}!`)
-    return userName
-  }
+  return Math.floor(Math.random() * (max - min + 1)) + min
+}
+export const greetUser = () => {
+  console.log('Welcome to the Brain Games!')
+  const userName = readlineSync.question('May I have your name? ')
+  console.log(`Hello, ${userName}!`)
+  return userName
+}
 export default playPrimeGame
