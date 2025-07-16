@@ -1,30 +1,20 @@
 import readlineSync from 'readline-sync'
-const getUserName = () => {
-  const userName = readlineSync.question('May I have your name? ')
-  return userName
-}
-const greetUser = (name) => {
-  console.log(`Hello, ${name}!`)
-}
-const runGame = (description, generateRound) => {
+const runGame = (rules, generateRound) => {
   console.log('Welcome to the Brain Games!')
-  console.log(description)
-  const userName = getUserName()
-  greetUser(userName)
+  const name = readlineSync.question('May I have your name? ')
+  console.log(`Hello, ${name}!\n${rules}`)
   const roundsCount = 3
   for (let i = 0; i < roundsCount; i += 1) {
     const [question, correctAnswer] = generateRound()
     console.log(`Question: ${question}`)
-    const userAnswer = readlineSync.question('Your answer: ')
-    if (userAnswer === correctAnswer) {
-      console.log('Correct!')
-    }
-    else {
+    const userAnswer = readlineSync.question('Your answer: ').toLowerCase()
+    if (userAnswer !== correctAnswer) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`)
-      console.log(`Let's try again, ${userName}!`)
+      console.log(`Let's try again, ${name}!`)
       return
     }
+    console.log('Correct!')
   }
-  console.log(`Congratulations, ${userName}!`)
+  console.log(`Congratulations, ${name}!`)
 }
-export { runGame, getUserName, greetUser }
+export default runGame
