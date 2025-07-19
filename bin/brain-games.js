@@ -1,3 +1,3 @@
 #!/usr/bin/env node
-import greetUser from '../src/games/games.js'
+import { greetUser } from '../src/cli.js'
 greetUser()
