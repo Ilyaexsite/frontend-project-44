@@ -1,5 +1,6 @@
-import runGame from '../cli.js'
+import runGame from '../gameEngine.js'
 import { getRandomNumber } from '../utils.js'
+
 const gameRules = 'What is the result of the expression?'
 const calculate = (num1, num2, operator) => {
   switch (operator) {
@@ -13,6 +14,7 @@ const calculate = (num1, num2, operator) => {
       throw new Error(`Unknown operator: ${operator}`)
   }
 }
+
 const generateRound = () => {
   const num1 = getRandomNumber(1, 25)
   const num2 = getRandomNumber(1, 25)
@@ -22,6 +24,7 @@ const generateRound = () => {
   const correctAnswer = String(calculate(num1, num2, operator))
   return [question, correctAnswer]
 }
+
 export default () => {
   runGame(gameRules, generateRound)
 }

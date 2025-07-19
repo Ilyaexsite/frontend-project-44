@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync'
+
 const isPrime = (num) => {
   if (num < 2) return false
   if (num === 2) return true
@@ -9,6 +10,7 @@ const isPrime = (num) => {
   }
   return true
 }
+
 const playPrimeGame = () => {
   console.log('Welcome to the Brain Games!')
   const userName = readlineSync.question('May I have your name? ')
@@ -33,9 +35,11 @@ const playPrimeGame = () => {
   }
   console.log(`Congratulations, ${userName}!`)
 }
+
 export const getRandomInt = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min
 }
+
 export const greetUser = () => {
   console.log('Welcome to the Brain Games!')
   const userName = readlineSync.question('May I have your name? ')

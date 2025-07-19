@@ -2,6 +2,9 @@
 [![Actions Status](https://github.com/Ilyaexsite/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Ilyaexsite/frontend-project-44/actions)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Ilyaexsite_frontend-project-44&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Ilyaexsite_frontend-project-44)
 
+## Если вы используете ОС Windows, допускается добавлять скриншоты вместо аскинем.
+Игра "Простое ли число?"()
+
 ## Минимальные требования
     Node.js (версия 18 или выше)
     npm v9+
@@ -9,7 +12,7 @@
 ## Установка
 
 ```bash
-npm install -g brain-games
+npm install -g frontend-project-44
 ```
 
 ## Тест

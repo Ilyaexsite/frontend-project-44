@@ -1,5 +1,6 @@
-import runGame from '../cli.js'
+import runGame from '../gameEngine.js'
 import { getRandomNumber } from '../utils.js'
+
 const gameRules = 'What number is missing in the progression?'
 const generateProgression = (start, step, length) => {
   const progression = []
@@ -8,6 +9,7 @@ const generateProgression = (start, step, length) => {
   }
   return progression
 }
+
 const generateRound = () => {
   const progressionLength = getRandomNumber(5, 10)
   const start = getRandomNumber(1, 20)
@@ -19,6 +21,7 @@ const generateRound = () => {
   const question = progression.join(' ')
   return [question, correctAnswer]
 }
+
 export default () => {
   runGame(gameRules, generateRound)
 }

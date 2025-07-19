@@ -1,5 +1,6 @@
-import runGame from '../cli.js'
+import runGame from '../gameEngine.js'
 import { getRandomNumber } from '../utils.js'
+
 const gameRules = 'Find the greatest common divisor of given numbers.'
 const gcd = (a, b) => (b === 0 ? a : gcd(b, a % b))
 const generateRound = () => {
